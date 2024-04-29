@@ -9,12 +9,10 @@ const getAllUsers = (inputId) => {
 const createNewUserService = (data) => {
     return axios.post('/api/create-new-userss', data)
 }
-const updateUserService = (data) => {
-    console.log('check data from service', data)
-    return axios.put('/api/edit-user', data)
+const editUserService = (inputData) => {
+    return axios.put('/api/edit-user', inputData)
 }
 const deleteUserService = (userId) => {
-    console.log('check data from service', userId)
     // return axios.delete('/api/delete-user', { params: { id: userId } })
     return axios.delete('/api/delete-user', {
         data: {
@@ -22,4 +20,4 @@ const deleteUserService = (userId) => {
         }
     });
 }
-export { handleLoginApi, getAllUsers, createNewUserService, updateUserService, deleteUserService }
+export { handleLoginApi, getAllUsers, createNewUserService, editUserService, deleteUserService }
