@@ -48,3 +48,161 @@
         }
     }
 }
+
+.home-header-banner {
+    background: url('../../assets/header-background.jpg') center center no-repeat;
+
+    height: 690px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    .content-up {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+
+        height: 65%;
+        padding-top: 15px;
+
+        .title1 {
+
+            text-align: center;
+            font-size: 35px;
+            text-shadow: 1px 1px 1px #333;
+            margin-bottom: 5px;
+            color: white;
+            margin-top: 147px;
+        }
+
+        .title2 {
+            text-align: center;
+            font-size: 35px;
+            text-shadow: 1px 1px 1px #333;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .search {
+            /* width: fit-content; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 10px;
+            width: 465px;
+            border-radius: 25px;
+            background: #f7d800;
+
+            i {
+                margin: 0 5px;
+
+            }
+
+            input {
+                height: 30px;
+                width: 390px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .content-down {
+        height: 35%;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+
+        .options {
+
+            text-align: center;
+            display: flex;
+            gap: 70px;
+            justify-content: center;
+
+            .option-child {
+
+                width: 100px;
+
+                .border-img-content {
+                    width: 70px;
+                    /* Thay đổi kích thước container tùy ý */
+                    height: 70px;
+                    /* Thay đổi kích thước container tùy ý */
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+
+                    .icon-child {
+                        background: url('../../assets/kham_chuyenkhoa.png') center center no-repeat;
+                        height: 35px;
+                        width: 35px;
+                        background-size: cover;
+                        text-align: center;
+
+                    }
+
+                    .icon-child2 {
+                        background: url('../../assets/kham_tuxa.png') center center no-repeat;
+                        height: 35px;
+                        width: 35px;
+                        background-size: cover;
+                        text-align: center;
+
+                    }
+
+                    .icon-child3 {
+                        background: url('../../assets/kham_tongquat.png') center center no-repeat;
+                        height: 35px;
+                        width: 35px;
+                        background-size: cover;
+                        text-align: center;
+
+                    }
+
+                    .icon-child4 {
+                        background: url('../../assets/dichvu_xetnghiem.png') center center no-repeat;
+                        height: 35px;
+                        width: 35px;
+                        background-size: cover;
+                        text-align: center;
+
+                    }
+
+                    .icon-child5 {
+                        background: url('../../assets/suckhoe_tinhthan.png') center center no-repeat;
+                        height: 35px;
+                        width: 35px;
+                        background-size: cover;
+                        text-align: center;
+
+                    }
+
+                    .icon-child6 {
+                        background: url('../../assets/kham_nhakhoa.png') center center no-repeat;
+                        height: 35px;
+                        width: 35px;
+                        background-size: cover;
+                        text-align: center;
+
+                    }
+                }
+
+                .text-child {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+}
