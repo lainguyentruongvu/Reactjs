@@ -1,4 +1,15 @@
 {
+    "homedeader": {
+        "speciality": "Chuyên khoa",
+        "searchdoctor": "Tìm các bác sĩ theo chuyên khoa",
+        "health-facility": "Cơ sở ý tế",
+        "select-room": "Chọn bệnh viện phòng khám",
+        "doctor": "Bác sĩ",
+        "select-doctor": "Các bác sĩ giỏi",
+        "fee": "Gói khám",
+        "check-health": "Khám sức khỏe tổng quát",
+        "support": "Hỗ trợ"
+    },
     "common": {
         "add": "Thêm",
         "edit": "Sửa",

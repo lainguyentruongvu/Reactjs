@@ -1,41 +1,44 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './HomeHeader.scss';
+import logo from '../../assets/logo.svg';
+import { FormattedMessage } from 'react-intl';
 class HomeHeader extends Component {
 
     render() {
+        console.log('check props: ', this.props);
         return (
             <React.Fragment>
                 <div className='home-header-container'>
                     <div className='home-header-content'>
                         <div className='left-content'>
                             <i className="fas fa-bars"></i>
-                            <div className='header-logo'>
-                            </div>
+                            <img className='header-logo' src={logo}></img>
                         </div>
                         <div className='center-content'>
                             <div className='child-content'>
-                                <div><b>Chuyên khoa</b></div>
-                                <div>Tìm các bác sĩ theo chuyên khoa</div>
+                                <div><b><FormattedMessage id="homedeader.speciality" /> </b></div>
+                                <div><FormattedMessage id="homedeader.searchdoctor" /></div>
                             </div>
                             <div className='child-content'>
-                                <div><b>Cơ sở ý tế</b></div>
-                                <div>Chọn bệnh viện phòng khám</div>
+                                <div><b><FormattedMessage id="homedeader.health-facility" /></b></div>
+                                <div><FormattedMessage id="homedeader.select-room" /></div>
                             </div>
                             <div className='child-content'>
-                                <div><b>Bác sĩ</b></div>
-                                <div>Các bác sĩ giỏi</div>
+                                <div><b><FormattedMessage id="homedeader.doctor" /></b></div>
+                                <div><FormattedMessage id="homedeader.select-doctor" /></div>
                             </div>
                             <div className='child-content'>
-                                <div><b>Gió khám</b></div>
-                                <div>Khám sức khỏe tổng quát</div>
+                                <div><b><FormattedMessage id="homedeader.fee" /></b></div>
+                                <div><FormattedMessage id="homedeader.check-health" /></div>
                             </div>
                         </div>
                         <div className='right-content'>
                             <div className='support'>
-                                <i className="fas fa-question-circle">Hỗ trợ</i>
+                                <i className="fas fa-question-circle"></i><FormattedMessage id="homedeader.support" />
                             </div>
-                            <div className='flag'>VN</div>
+                            <div className='language-vi'>VN</div>
+                            <div className='language-en'>EN</div>
                         </div>
                     </div>
                 </div>
@@ -98,7 +101,9 @@ class HomeHeader extends Component {
 
 const mapStateToProps = state => {
     return {
-        isLoggedIn: state.user.isLoggedIn
+        isLoggedIn: state.user.isLoggedIn,
+        languages: state.app.language,
+
     };
 };
 
