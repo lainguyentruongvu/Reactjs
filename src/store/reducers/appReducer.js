@@ -1,3 +1,4 @@
+import { lang } from 'moment/moment';
 import actionTypes from '../actions/actionTypes';
 
 const initContentOfConfirmModal = {
@@ -9,7 +10,7 @@ const initContentOfConfirmModal = {
 
 const initialState = {
     started: true,
-    language: 'en',
+    language: 'vi',
     systemMenuPath: '/system/user-manage',
     contentOfConfirmModal: {
         ...initContentOfConfirmModal
@@ -30,6 +31,12 @@ const appReducer = (state = initialState, action) => {
                     ...state.contentOfConfirmModal,
                     ...action.contentOfConfirmModal
                 }
+            }
+        case actionTypes.CHANGE_LANGUAGE:
+            console.log('check redux: ', action)
+            return {
+                ...state,
+                language: action.language,
             }
         default:
             return state;
